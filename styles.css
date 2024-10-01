@@ -1,4 +1,3 @@
-/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +16,6 @@
     height: 100vh;
     margin: 0;
   }
-  
-  /* Container takes full screen height with no gaps */
   .container {
     display: grid;
     grid-template-areas: 
@@ -31,8 +28,7 @@
     width: 100%;
     height: 100vh;
   }
-  
-  /* Top bar with search and circles */
+
   .top-bar {
     grid-area: top-bar;
     display: flex;
@@ -63,31 +59,26 @@
     background-color: rgb(246, 248, 248);
     border-radius: 60%;
   }
-  
-  /* Dark Blue Box */
+
   .dark-blue-box {
     grid-area: dark-blue-box;
     background-color: rgb(128, 128, 206);
-    /* height: 60px; */
   }
-  
-  /* Remove gap between dark-blue-box and header */
+
   header {
     grid-area: header;
     background-color: rgb(135,206,235);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100px; Set a height that works for your design */
+   
 }
 
-  
-  /* Center content within each feature and other sections */
   .features {
     grid-area: features;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0; /* Remove any gaps between features */
+    gap: 0; 
   }
   
   .feature1, .feature2, .feature3 {
@@ -185,7 +176,6 @@
     }
   }
   
-  /* Remove padding between sections */
   .container > * {
     margin: 0;
     padding: 0;
